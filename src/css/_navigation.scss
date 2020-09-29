@@ -1,0 +1,124 @@
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.logo {
+  display: none;
+}
+
+.nav-list {
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in;
+  margin: 0;
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  height: 500px;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  background-color: $base-color;
+  & li {
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+}
+
+.burger {
+  cursor: pointer;
+  position: fixed;
+  right: 1rem;
+  z-index: 10;
+  top: 1rem;
+
+  .burger,
+  .line1,
+  .line2,
+  .line3 {
+    width: 26px;
+    transition: all 0.3s ease;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+  z-index: 2;
+  transition: all 1s ease-in-out;
+}
+
+.toggle .line1 {
+  opacity: 0;
+}
+.toggle .line2 {
+  transform: rotate(-45deg) translate(-0px, 6px);
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(1px, -6px);
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+    padding: 1rem 0rem;
+    max-width: 1024px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    background-color: $base-color;
+    .logo {
+      margin-right: auto;
+      display: block;
+      display: flex;
+      align-items: center;
+
+      .logo__img {
+        width: 60px;
+        margin: 0 10px;
+      }
+      .logo__name {
+        text-transform: capitalize;
+      }
+    }
+    .nav-list {
+      height: initial;
+      width: initial;
+      position: static;
+      transform: translateX(0%);
+      transition: none;
+      z-index: 222;
+      flex-direction: row;
+      & li {
+        position: static;
+        list-style: none;
+        & a {
+          text-decoration: none;
+          font-size: 1rem;
+          color: $nav-color;
+          text-transform: capitalize;
+        }
+        & a:hover {
+          color: $text-color;
+        }
+      }
+    }
+  }
+  .burger {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+}

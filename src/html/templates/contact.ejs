@@ -1,0 +1,16 @@
+<%- include('../partials/head') %> <%- include('../partials/head_end') %> <%-
+include('../partials/navigation') %>
+
+<form id="form1" action="/" onsubmit="return validate(this)" method="post">
+  <div><input type="text" name="name" placeholder="Name" /></div>
+  <div><input type="text" name="age" placeholder="Your Age" /></div>
+  <div><input type="text" name="email1" placeholder="Your Email" /></div>
+  <div><input type="text" name="email2" placeholder="Repeat Your Email" /></div>
+  <div><input type="text" name="site" placeholder="Your Website" /></div>
+  <div><input type="submit" value="Send tilmelding" /></div>
+  <div id="message"></div>
+</form>
+
+<%- include('../partials/footer') %>
+<script src="../../../assets/js/navigation.js"></script>
+<script src="../../../assets/js/contact.js"></script>

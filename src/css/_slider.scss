@@ -1,0 +1,28 @@
+.swiper-container {
+  width: 600px;
+  height: 300px;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://source.unsplash.com/random");
+  background-size: cover;
+  object-fit: cover;
+}
+@media screen and (min-width: 375px) {
+  .swiper-container {
+    width: 500px;
+    height: 200px;
+    position: relative;
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url("https://source.unsplash.com/random");
+      background-size: cover;
+      object-fit: cover;
+      position: absolute;
+    }
+  }
+}

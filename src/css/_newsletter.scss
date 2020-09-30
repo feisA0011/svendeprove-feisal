@@ -1,0 +1,59 @@
+@media screen and (min-width: 1024px) {
+  .newsletter {
+    width: 100%;
+    background-color: $background-color;
+    &__container {
+      max-width: $max-width;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
+    &__title {
+      color: $title-color-2;
+      font-size: 2rem;
+      text-transform: capitalize;
+      color: #2a509b;
+      font-weight: 500;
+      padding: 0 0 1rem 0;
+    }
+    &__info {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 0;
+    }
+    &__text {
+      -place-self: center;
+      font-size: 0.9rem;
+      font-weight: $fw-500;
+    }
+    &__form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 1rem;
+      input {
+        width: 100%;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 8px 10px 8px 10px;
+        cursor: pointer;
+      }
+      .form__email {
+      }
+      .form__name {
+      }
+      .form__submit {
+        place-self: end;
+        input {
+          outline: none;
+          background-color: #017afb;
+          border: none;
+        }
+        input[value="Tilmeld"] {
+          font-size: 1rem;
+          padding: 10px 15px;
+        }
+      }
+    }
+  }
+}

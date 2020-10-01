@@ -1,3 +1,26 @@
+.about {
+  max-width: $max-width;
+  margin: 0 auto;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+  padding: 2rem;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  &__title {
+    color: $title-color;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: $fw-500;
+  }
+}
+
+// MOBILE MEDIA
+
 @media screen and (min-width: 768px) {
   .about {
     max-width: $max-width;

@@ -10,7 +10,19 @@
 }
 
 .logo {
-  display: none;
+  display: flex;
+  align-items: center;
+  padding: 2rem 1rem 1rem;
+  border-bottom: 1px solid $border;
+  &__img {
+    width: 60px;
+    margin-right: 5px;
+    box-shadow: 0px 25px 37px -21px rgba(136, 135, 135, 0.75);
+  }
+  &__name {
+    font-size: 1.1rem;
+    font-weight: $fw-500;
+  }
 }
 
 .nav-list {
@@ -31,15 +43,23 @@
   & li {
     padding: 1rem;
     font-size: 1.5rem;
+    & a {
+      text-decoration: none;
+      color: $nav-color;
+      text-transform: capitalize;
+    }
+    & a:hover {
+      color: #000;
+    }
   }
 }
 
 .burger {
   cursor: pointer;
-  position: fixed;
+  position: absolute;
   right: 1rem;
   z-index: 10;
-  top: 1rem;
+  top: 3rem;
 
   .burger,
   .line1,
@@ -83,7 +103,8 @@
       display: block;
       display: flex;
       align-items: center;
-
+      border: none;
+      padding: 0;
       .logo__img {
         width: 60px;
         margin: 0 10px;
@@ -105,7 +126,7 @@
         list-style: none;
         & a {
           text-decoration: none;
-          font-size: 1rem;
+          font-size: 1.2rem;
           color: $nav-color;
           text-transform: capitalize;
         }

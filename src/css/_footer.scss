@@ -1,10 +1,11 @@
 .footer {
   background-color: $background-color;
-  padding: 2rem 0 1rem;
+  padding: 1rem 2rem 1rem;
   &__container {
     max-width: $max-width;
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
   }
   &__contact,
@@ -23,8 +24,23 @@
     font-weight: $fw-500;
     text-transform: uppercase;
   }
+  &__partner a {
+    color: $title-color;
+    text-transform: capitalize;
+  }
   &__copy {
     padding: 1rem 0 0;
     text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    &__container {
+      max-width: $max-width;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 }

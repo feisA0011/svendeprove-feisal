@@ -1,29 +1,32 @@
-<article id="newsletter" class="newsletter">
-  <section class="newsletter__container">
-    <h1 class="newsletter__title">Tilmeld vores nyhedbrev</h1>
-    <div class="newsletter__info">
-      <p class="newsletter__text">
-        Få inspiration og nyheder om dyrevelfærd og vores arbejde, direkt i din
-        indbakke
-      </p>
-      <form
-        class="newsletter__form"
-        id="form1"
-        action="/"
-        onsubmit="return validate(this)"
-        method="post"
-      >
-        <div class="form__email">
-          <input type="text" name="email1" placeholder="Email" />
-        </div>
-        <div class="form__name">
-          <input type="text" name="name" placeholder="Name" />
-        </div>
-        <div id="message">message</div>
-        <div class="form__submit">
-          <input type="submit" value="Tilmeld" />
-        </div>
-      </form>
-    </div>
-  </section>
-</article>
+<main>
+  <article id="newsletter" class="newsletter">
+    <section class="newsletter__container">
+      <h1 class="newsletter__title">Tilmeld vores nyhedbrev</h1>
+      <div class="newsletter__info">
+        <p class="newsletter__text">
+          Få inspiration og nyheder om dyrevelfærd og vores arbejde, direkt i
+          din indbakke
+        </p>
+        <form
+          class="newsletter__form"
+          id="form1"
+          action="/"
+          onsubmit="return validate(this)"
+          method="post"
+        >
+          <div class="form__email">
+            <input type="text" name="email1" placeholder="Email" />
+          </div>
+          <div class="form__name">
+            <input type="text" name="name" placeholder="Name" />
+          </div>
+          <div id="message"></div>
+          <div class="form__submit">
+            <input id="submit" type="submit" value="Tilmeld" />
+          </div>
+        </form>
+      </div>
+    </section>
+  </article>
+</main>
+<script src="../../../assets/js/newsletter.js"></script>

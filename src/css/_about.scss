@@ -1,4 +1,5 @@
 .about {
+  position: relative;
   max-width: $max-width;
   margin: 0 auto;
   display: grid;
@@ -28,16 +29,23 @@
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2;
     padding: 2rem 0;
 
     &__container {
       display: grid;
       grid-template-columns: 1fr;
+      grid-template-rows: 2rem;
       gap: 1rem;
     }
     &__title {
       color: $title-color;
       font-size: 1.8rem;
+      font-weight: $fw-500;
+    }
+    &__text {
+      font-size: 1.2rem;
+      font-weight: $fw-500;
     }
   }
 }

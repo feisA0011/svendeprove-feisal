@@ -6,23 +6,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("https://source.unsplash.com/random");
   background-size: cover;
   object-fit: cover;
 }
 @media screen and (min-width: 375px) {
   .swiper-container {
-    width: 500px;
+    width: 700px;
     height: 200px;
-    position: relative;
+
+    -position: relative;
     .swiper-slide {
       display: flex;
       justify-content: center;
       align-items: center;
-      background-image: url("https://source.unsplash.com/random");
       background-size: cover;
       object-fit: cover;
-      position: absolute;
+      -position: absolute;
     }
   }
 }

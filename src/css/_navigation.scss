@@ -1,7 +1,7 @@
 @keyframes navLinkFade {
   from {
     opacity: 0;
-    transform: translateX(50px);
+    transform: translateX(10px);
   }
   to {
     opacity: 1;
@@ -10,6 +10,7 @@
 }
 
 .logo {
+  -position: fixed;
   display: flex;
   align-items: center;
   padding: 2rem 1rem 1rem;
@@ -40,6 +41,8 @@
   justify-content: center;
   right: 0;
   background-color: $base-color;
+  border-radius: 0 0 0 10px;
+  opacity: 0.91;
   & li {
     padding: 1rem;
     font-size: 1.5rem;
@@ -56,7 +59,7 @@
 
 .burger {
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   right: 1rem;
   z-index: 10;
   top: 3rem;
@@ -70,6 +73,8 @@
     height: 3px;
     background-color: black;
     margin: 5px;
+    border-radius: 5px;
+    border-bottom: 0.9px solid blue;
   }
 }
 

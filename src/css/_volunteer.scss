@@ -20,7 +20,7 @@
     width: 340px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 3rem 1fr 2fr 3rem;
+    grid-template-rows: 3rem 1fr 2fr 3.5rem;
     justify-content: center;
     box-shadow: 1px 1px 34px -11px rgba(0, 0, 0, 0.2);
     gap: 1rem;
@@ -36,7 +36,7 @@
     .card__box-btm {
       background-color: #f7f7f7;
       border: 1px $border solid;
-      padding: 1rem 0;
+      padding: 0.4rem 0;
     }
     .card__title {
       padding: 1rem;
@@ -60,6 +60,7 @@
       padding: 0 1rem;
       font-weight: bold;
       font-style: italic;
+      font-size: 0.9rem;
     }
   }
 }
@@ -93,7 +94,7 @@
       width: 340px;
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 3rem 1fr 2fr 3rem;
+      grid-template-rows: 3rem 1fr 2fr 3.5rem;
       justify-content: center;
       box-shadow: 1px 1px 34px -11px rgba(0, 0, 0, 0.2);
       gap: 1rem;
@@ -109,7 +110,7 @@
       .card__box-btm {
         background-color: #f7f7f7;
         border: 1px $border solid;
-        padding: 1rem 0;
+        padding: 0.4rem 0;
       }
       .card__title {
         padding: 1rem;
